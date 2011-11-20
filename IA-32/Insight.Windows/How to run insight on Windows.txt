@@ -1,0 +1,34 @@
+How to install Insight on windows:
+
+1) Download cygwin
+2) 
+	To compile and install the EDA tools from source, you will need the following packages:
+		autoconf at Devel/autoconf
+		gcc at Devel/gcc
+		libtool at Devel/libtool
+		make at Devel/make
+		M4 at Interpreters/m4
+		X11 development at X11/xorg-x11-devel
+		tcsh at Shells/tcsh (necessary only for compiling magic)
+		
+	The following packages are optional but will make life easier if anything goes wrong:
+		
+		gdb at Devel/gdb
+		emacs at Editors/emacs or
+		vim at Editors/vim
+		
+	The following packages are not needed by the EDA tools but are a good idea to include anyway:
+		
+		zip at Archive/zip
+		unzip at Archive/unzip
+		automake at Devel/automake
+		g++ at Devel/g++
+	
+3) Go to C:\Cygwin (typical folder) throught cygwin batch.
+4) Copy tcltk tgz files to root directory
+5) Type: tar xfz tcltk_x11_win.tgz
+6) Type: tar xfz tcltk_x11_vista.tgz
+7) delete tgz files.
+8) Unpack gdb files and copy-replace usr folder on root folder.
+9) Use C:\cygwin\usr\bin\insight.exe to run the program
+10) DONE!
